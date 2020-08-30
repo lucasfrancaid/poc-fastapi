@@ -1,0 +1,12 @@
+# Python
+*.log
+*.pot
+*.pyc
+*__pycache__
+
+# Virtual Environments
+.venv
+.env
+
+# VSCode
+.vscode
