@@ -48,7 +48,7 @@ Path to get users with pagination using query parameters
 """
 @app.get('/users/')
 async def read_pagination(skip: int = 0, limit: int = 10):
-    return fake_users_db[skip: skip + limit]
+    return {'users': fake_users_db[skip: skip + limit]}
 
 """
 Path to create user with User model
@@ -56,7 +56,8 @@ Path to create user with User model
 @app.post('/users')
 def create_user(user: User):
     user.id = fake_users_db[-1].id + 1
-    return {'user': user}
+    fake_users_db.append(user)
+    return {'message': 'User was created!'}
 
 """
 Path to create anything with Body accepting anything data
@@ -73,7 +74,7 @@ def update(user_id: int, user: User):
     index = [index for index, user in enumerate(fake_users_db) if user.id == user_id]
     user.id = fake_users_db[index[0]].id
     fake_users_db[index[0]] = user
-    return {'user': user}
+    return {'message': 'User was updated!'}
 
 """
 Path to delete an user by id with path parameter
@@ -82,5 +83,5 @@ Path to delete an user by id with path parameter
 def delete(user_id: int):
     user = [user for user in fake_users_db if user.id == user_id]
     fake_users_db.remove(user[0])
-    return {'message': 'ok'}
+    return {'message': 'User was deleted!'}
 
