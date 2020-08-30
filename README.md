@@ -1,7 +1,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # POC - FastAPI
-Publicação deste projeto no Medium: https://medium.com/@lucasfrancaid/como-criar-uma-api-em-python-com-fastapi-e-primeiras-impress%C3%B5es-sobre-o-framework-492d9779a6ae?sk=1c4c52504129521eca69fd41a6e65023
+Learn to create this API with my publish in [Medium](https://medium.com/@lucasfrancaid/como-criar-uma-api-em-python-com-fastapi-e-primeiras-impress%C3%B5es-sobre-o-framework-492d9779a6ae?sk=1c4c52504129521eca69fd41a6e65023)
 
 
 ## Requirements
@@ -33,9 +33,10 @@ uvicorn main:app --reload
 
 ## ▶️ Do requests
 - Swagger UI: http://127.0.0.1:8000/docs
+- ReDoc: http://127.0.0.1:8000/redoc
+
 
 ## 📬 Contact
-
 <b>Lucas França</b> <br/>
 Linkedin: https://www.linkedin.com/in/lucasfrancaid/
 
