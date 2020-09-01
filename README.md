@@ -1,8 +1,8 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # POC - FastAPI
-Learn to create this API with my publish in [Medium](https://medium.com/@lucasfrancaid/como-criar-uma-api-em-python-com-fastapi-e-primeiras-impress%C3%B5es-sobre-o-framework-492d9779a6ae?sk=1c4c52504129521eca69fd41a6e65023)
-
+- Learn to create this API with my publish in [Medium](https://medium.com/@lucasfrancaid/como-criar-uma-api-em-python-com-fastapi-e-primeiras-impress%C3%B5es-sobre-o-framework-492d9779a6ae?sk=1c4c52504129521eca69fd41a6e65023)
+- [POC - Advancing to Routes and Tests](https://github.com/lucasfrancaid/poc-fastapi/tree/advancing)
 
 ## Requirements
 - Python 3.6+
