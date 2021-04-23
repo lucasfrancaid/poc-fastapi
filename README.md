@@ -1,11 +1,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # POC - FastAPI
-- Learn to create this API with my publish in [Medium](https://medium.com/@lucasfrancaid/como-criar-uma-api-em-python-com-fastapi-e-primeiras-impress%C3%B5es-sobre-o-framework-492d9779a6ae?sk=1c4c52504129521eca69fd41a6e65023)
-- [POC - Advancing to Routes and Tests](https://github.com/lucasfrancaid/poc-fastapi/tree/advancing)
+Advancing to Routes and Test with FastAPI
+
 
 ## Requirements
-- Python 3.6+
+- Python 3.8
+- Docker
 
 
 ## 🚀 Starting
@@ -20,20 +21,22 @@ git checkout -b advancing
 git pull origin advancing
 ```
 
+### Setup with Docker
+```bash
+docker-compose up
+```
+
+- Run tests
+```bash
+docker-compose exec server pytest -v
+```
+
+### Manual setup
 - Create and activate a virtual environment:
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-- Install requirements:
-```bash
-pip install -r requirements.txt
-```
-
-- Run tests with pytest:
-```bash
-pytest
+pip3 install pipenv
+pipenv install
+pipenv shell
 ```
 
 - Run the live server with uvicorn:
@@ -41,6 +44,10 @@ pytest
 uvicorn src.main:app --reload
 ```
 
+- Run tests
+```bash
+pytest -v
+```
 
 ## ▶️ Do requests
 - Swagger UI: http://127.0.0.1:8000/docs
