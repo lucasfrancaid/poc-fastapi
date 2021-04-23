@@ -14,6 +14,12 @@
 git clone https://github.com/lucasfrancaid/poc-fastapi.git
 ```
 
+- Turn to this branch:
+```bash
+git checkout -b advancing
+git pull origin advancing
+```
+
 - Create and activate a virtual environment:
 ```bash
 python3 -m venv .venv
@@ -25,9 +31,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+- Run tests with pytest:
+```bash
+pytest
+```
+
 - Run the live server with uvicorn:
 ```bash
-uvicorn main:app --reload
+uvicorn src.main:app --reload
 ```
 
 
@@ -42,7 +53,6 @@ Linkedin: https://www.linkedin.com/in/lucasfrancaid/
 
 <br>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lucasfrancaid
